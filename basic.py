@@ -47,18 +47,6 @@ a = 15
 b = -2
 print(a%b) #output: -1
 
-print(not True)
-print(not False)
-print(False and True)#output: false
-print(True and False)#output: false
-print(False and False)#output: false
-print(True and True) #output: true
-
-print(False or True)#output: true
-print(True or False)#output: true
-print(False or False)#output: false
-print(True or True) #output: true
-
 # Input in python
 name = input("name : ")
 age = int(input("age : "))
@@ -95,3 +83,9 @@ print("eat "+eat)
  #short way
 food = input("food : ")
 print("sweet") if food == "cake" or food == "jlebi" else print("nosweet")
+
+
+#random number genrate
+import random
+random_num  = random.randrange(1,100)
+print("This is a random number : ",random_num)
