@@ -1,5 +1,5 @@
 #Strings in python
-
+str = "hello", "hiii" #store multiple strings in single str
 #define string with next line using escape sequance character
 str = "my mother's name is mother.\nshe is very sweet."
 print(str)
@@ -24,7 +24,7 @@ print(str.count("coder"))
 #indexing
 str = "apna_university"
 print(str[3])
-# can not change index value
+# can not change index value because strings are immutable in python
 #str[1] = "3"
 
 #slicing in strings
