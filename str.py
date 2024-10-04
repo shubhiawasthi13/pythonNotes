@@ -21,6 +21,17 @@ print(str.replace("he","she"))
 print(str.find("a")) #fisrt time exist word index
 print(str.count("coder"))
 
+name = " Shubhi Awasthi"
+print(name.strip()) #remove white space from starting
+
+name = "Shubhi Awasthi"
+check_data = "bh" in name #check given string is present 
+print(check_data)   
+
+name = "Shubhi Awasthi"
+check_data = "bh" not in name #check given string is not present
+print(check_data)
+
 #indexing
 str = "apna_university"
 print(str[3])
