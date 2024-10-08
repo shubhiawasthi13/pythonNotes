@@ -1,8 +1,17 @@
 #Strings in python
 str = "hello", "hiii" #store multiple strings in single str
-#define string with next line using escape sequance character
-str = "my mother's name is mother.\nshe is very sweet."
-print(str)
+#escape sequance character
+str1 = "my mother's name is mother.\nshe is very sweet."
+str2 = "my mother's name is mother.\tshe is very sweet."
+str3 =  "my mother's name is mother.she is very \"sweet\"."
+str4 = "my name is shubhi \r i am good at frontend"
+str5 = "my name is shubhi \\ i am good at frontend"
+print(str1)
+print(str2)
+print(str3)
+print(str4)
+print(str5)
+
 
 #concatinate two strings with space between
 str1 ="apna"
@@ -47,3 +56,15 @@ print(str[1:])
 str = "apple" #index -1 -2 -3 -4 -5 from right
 print(str[-3:-1])
 
+#concatinate strings with integers using formate() method
+age = 24
+txt = "my name is something & i am {} ."
+print(txt.format(age))
+
+#formate method takes unlimted no. of arguments
+quantity = 3
+item_no = 456
+price = 49.99
+my_order = "i want {} pieces of item {} for {} dollers"
+my_order = "i want {2} pieces of item {0} for {1} dollers" #change value according index
+print(my_order.format(quantity, item_no, price)) #arguments folllow index
