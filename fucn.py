@@ -40,3 +40,44 @@ def converter(usd_val):
     print(usd_val, "USD =" ,inr_val, "INR")
 
 converter(1)    
+
+
+
+
+# Function *RECURSION*
+def show(n):
+    if(n == 0): #Base case
+        return
+    print(n)
+    show(n-1)
+    print("end")     
+
+show(5) #print 5 to 1 nums
+
+# factorial of n number
+def fact(n):
+    if(n == 0 or n == 1):
+        return 1
+    else:
+        return n* fact(n-1)   
+
+print(fact(3))  
+
+# sum of n number
+def calc_sum(n):
+    if(n == 0):
+        return 0
+    else:
+        return n + calc_sum(n-1)   
+
+print(calc_sum(5))  
+
+# Write a recursive function to print all elements in a list.
+def print_list(list , idx=0):
+    if(idx == len(list)):
+        return
+    print(list[idx])
+    print_list(list, idx+1)
+
+user_details = ["name : kamya" ,"age : 22" ,"user-id : 223344"]    
+print_list(user_details)
