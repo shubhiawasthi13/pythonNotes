@@ -1,4 +1,2 @@
-hello this is a sample file
-add new data in this file
-add new data in this file
+hello this is a sample file. you can open file in direct write mode with file name that you want to create
 add new data in this file
