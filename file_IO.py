@@ -53,3 +53,59 @@ with open("n_file.txt", "w") as f:
 # now delete..
 import os
 os.remove("n_file.txt")     
+
+
+
+# practice questions...
+# Q-1. create a new file "practice.txt" an add some data.
+with open("practice.txt", "w") as f:
+    f.write("Hi everyone\nwe are learning file I/O\n")
+    f.write("using java.\nI line programming in java.")
+
+# Q-2. WAF that replace all occurancess of "java" with "python" in above file.
+with open("practice.txt", "r") as f:
+    data = f.read()
+    
+new_data = data.replace("java", "python")
+print(new_data)
+
+with open("practice.txt", "w") as f:
+    f.write(new_data)
+
+# Q-3. Search if the word "learning" in data exist or not.
+word = "learning"
+with open("practice.txt" ,"r") as f:
+    data = f.read()
+    if(word in data):
+        print("found")
+    else:
+        print("not found")   
+
+# Q-4. WAP to find in which line of the file does the word "learning" occure first. print -1 if word not found
+word ="huu"
+data = True
+line_no = 1
+with open("practice.txt", "r") as f:
+    while data:
+        data = f.readline()
+        if (word in data):
+            print(line_no)
+            break
+        line_no+=1
+    else:
+        print(-1)
+
+# Q-5. From a file containing numbers seperated by comma, print the count of even numbers.
+with open("practice.txt", "w") as f:
+    f.write("1 , 3, 44, 12, 10, 34, 33")
+
+count = 0
+with open("practice.txt", "r") as f:
+    data = f.read()
+
+    nums = data.split(",")
+    for val in nums:
+        if(int(val)%2 == 0):
+            count+=1
+print(count)            
+
