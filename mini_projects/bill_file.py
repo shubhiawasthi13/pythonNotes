@@ -21,6 +21,17 @@ f.write(f"Net Paybale:{net_payable}\n")
 f.close()
 
 
+# search file
+import os
+searchfile = input("enter your name: ")
+if os.path.exists(f"files/{searchfile}.txt"):
+    f = open(f"files/{searchfile}.txt","r")
+    data = f.read()
+    print(data)
+else:
+    print("file not found")
+
+
 
 
 
