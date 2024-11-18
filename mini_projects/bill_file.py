@@ -18,6 +18,7 @@ f.write(f"Fix Charges: {fix_char}\n")
 f.write(f"Payable Amount: {payable_amnt}\n")
 f.write("=============================================\n")
 f.write(f"Net Paybale:{net_payable}\n")
+f.close()
 
 
 
